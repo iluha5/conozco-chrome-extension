@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  min-width: 280px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111827;
+  background: #ffffff;
+}
+
+.popup {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.muted {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.email {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.error {
+  margin: 0;
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+.primary-button,
+.secondary-button,
+.link-button {
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 10px 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.primary-button {
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.secondary-button {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #111827;
+}
+
+.link-button {
+  display: block;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  color: #111827;
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.link-button:hover {
+  filter: brightness(0.98);
+}
