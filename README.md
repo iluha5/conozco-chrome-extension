@@ -8,6 +8,13 @@ Chrome extension for adding words and phrases to your [Conozco](https://conozco.
 - pnpm 9+ (`corepack enable`)
 - Google Chrome
 
+## Usage
+
+1. Sign in via the extension popup
+2. Select a word or phrase (1–100 characters) on any webpage
+3. Click the blue **+** button that appears near the selection
+4. The word is added to your Conozco vocabulary
+
 ## Development
 
 ```bash

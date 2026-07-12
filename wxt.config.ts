@@ -14,7 +14,7 @@ export default defineConfig({
     name: isDevelopment ? 'Conozco (Dev)' : 'Conozco — Add Words',
     description: 'Quickly add words and phrases to your Conozco vocabulary from any webpage',
     homepage_url: 'https://conozco.net/extension',
-    permissions: ['storage'],
+    permissions: ['storage', 'activeTab'],
     host_permissions: [
       'https://conozco.net/*',
       ...(isDevelopment ? ['http://localhost:8000/*'] : []),

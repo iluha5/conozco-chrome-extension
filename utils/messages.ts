@@ -26,3 +26,23 @@ export type QuickAddResponse = {
   examplesCount: number;
   userWordId?: number;
 };
+
+export const QUICK_ADD_MESSAGE_TYPE = 'QUICK_ADD';
+export const GET_AUTH_STATE_MESSAGE_TYPE = 'GET_AUTH_STATE';
+
+export type QuickAddMessage = {
+  type: typeof QUICK_ADD_MESSAGE_TYPE;
+  word: string;
+};
+
+export type GetAuthStateMessage = {
+  type: typeof GET_AUTH_STATE_MESSAGE_TYPE;
+};
+
+export type QuickAddMessageResponse =
+  | { success: true; data: QuickAddResponse }
+  | { success: false; error: string; needsAuth?: boolean };
+
+export type GetAuthStateMessageResponse = {
+  authenticated: boolean;
+};
