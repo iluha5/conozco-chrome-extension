@@ -9,16 +9,16 @@ importers:
   .:
     devDependencies:
       '@biomejs/biome':
-        specifier: ^2.0.0
+        specifier: 2.5.2
         version: 2.5.2
       '@types/chrome':
-        specifier: ^0.0.280
+        specifier: 0.0.280
         version: 0.0.280
       typescript:
-        specifier: ^5.9.3
+        specifier: 5.9.3
         version: 5.9.3
       wxt:
-        specifier: ^0.20.27
+        specifier: 0.20.27
         version: 0.20.27(@types/node@26.1.0)(jiti@2.7.0)(rolldown@1.1.4)
 
 packages:
