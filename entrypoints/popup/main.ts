@@ -18,7 +18,15 @@ function renderState(state: PopupState) {
   }
 
   if (state.status === 'loading') {
-    appElement.innerHTML = '<p class="muted">Loading...</p>';
+    appElement.innerHTML = `
+      <div class="popup">
+        <h1>Conozco</h1>
+        <div class="loading" aria-live="polite" aria-busy="true">
+          <div class="spinner" aria-hidden="true"></div>
+          <p class="muted">Loading...</p>
+        </div>
+      </div>
+    `;
     return;
   }
 
