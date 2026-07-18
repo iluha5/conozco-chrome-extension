@@ -10,7 +10,10 @@ import {
   type QuickAddMessageResponse,
 } from '../utils/messages';
 
-const ALLOWED_AUTH_ORIGINS = new Set(['https://conozco.net', 'http://localhost:8000']);
+const ALLOWED_AUTH_ORIGINS = new Set([
+  'https://conozco.net',
+  ...(import.meta.env.DEV ? ['http://localhost:8000'] : []),
+]);
 
 function isAllowedAuthOrigin(origin: string | undefined): boolean {
   if (!origin) {
